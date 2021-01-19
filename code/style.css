@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Montserrat:wght@100&family=Space+Mono&display=swap');
+
+/* Global style */
+.navbar{
+    font-family: Inconsolata,monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+}
+
+.highlight, .description, .btn{
+    font-family: 'Space Mono', monospace;
+}
+
+.highlight{
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: -0.035em;
+    color: #333333;
+}
+
+.description{
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.035em;
+    color: #4f4f4f;
+}
+
+.footer{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+}
+
+.btn{
+    background-color: #333333;
+    width: 216px;
+    height: 68px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -0.035em;
+}
+
+/* Dekstop Style */
+@media only screen and (min-width: 800px){
+    .navbar{
+        margin-top: 40px;
+        margin-left: 77px;
+    }
+    
+    .section{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .image{
+        margin-top: 200px;
+        margin-left: 77px;
+        width: 540px;
+        height: 450px;
+    }
+
+    .highlight{
+        margin-top: 200px;
+        margin-left: 119px;
+        margin-bottom: 40px;
+        font-size: 64px;
+        line-height: 95px;
+    }
+
+    .description{
+        margin-left: 119px;
+        margin-right: 280px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .btn{
+        margin-top: 60px;
+        margin-left: 119px;
+        margin-right: 323px;
+    }
+
+    .footer{
+        margin-top: 293px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+
+/* Mobile Style */
+@media only screen and (max-width: 770px){
+    .navbar{
+        margin-left: 24px;
+        margin-top: 20px;
+    }
+
+    .image{
+        width: 300px;
+        height: 300px;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-top: 12px;
+        margin-bottom: 15px;
+    }
+
+    .highlight{
+        font-size: 48px;
+        line-height: 71px;
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-top: 60px;
+    }
+
+    .description{
+        font-size: 18px;
+        line-height: 27px;
+        margin-top: 30px;
+        margin-left: 23px;
+        margin-right: 24px;
+        margin-bottom: 90px;
+    }
+
+    .btn{
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-bottom: 100px;
+    }
+
+    .footer{
+        text-align: center;
+        margin-left: 23px;
+        margin-right: 23px;
+        margin-bottom: 42px;
+    }
+}
+
+/* Mobile rotate screen */
+@media only screen and (max-width: 800px) and (orientation:landscape) {
+    .sectiom {
+        display: flex;
+    }
+    .image {
+        margin-top: 70px;
+    }
+} 
